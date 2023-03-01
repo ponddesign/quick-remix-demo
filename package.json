@@ -26,6 +26,7 @@
     "/public/build"
   ],
   "dependencies": {
+    "@apollo/client": "^3.7.9",
     "@architect/architect": "^10.8.4",
     "@architect/functions": "^5.3.3",
     "@remix-run/architect": "^1.13.0",
