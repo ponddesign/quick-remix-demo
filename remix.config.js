@@ -11,6 +11,11 @@ module.exports = {
   serverBuildTarget: "arc",
   server: "./server.ts",
   ignoredRouteFiles: ["**/.*", "**/*.css", "**/*.test.{js,jsx,ts,tsx}"],
+  serverDependenciesToBundle: [
+    /@apollo\/client/,
+    /zen-observable-ts/,
+    /ts-invariant/,
+  ],
   routes(defineRoutes) {
     return defineRoutes((route) => {
       if (process.env.NODE_ENV === "production") return;
